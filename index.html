@@ -9,16 +9,16 @@
 	<script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
-	<div class="container">
-  	<form action="?" method="POST">
-    	<div class="form-group">
+  <div class="container">
+  <form action="?" method="POST">
+      <div class="form-group">
       <label for="email">Enter Text:</label><br><br>
-      <input type="email" class="form-control" id="email" placeholder="Enter Text" name="email"><br><br>
-<div class="g-recaptcha" data-sitekey=6Lev2q4UAAAAAI-sRxrKXF9YgjM6RpYrUdMn81gR></div>
+      <input type="email" class="form-control" id="email" placeholder="Enter Text" name="email"><br>
+      <div class="g-recaptcha" data-sitekey=6Lev2q4UAAAAAI-sRxrKXF9YgjM6RpYrUdMn81gR></div>
     </div>
     <div>
     </div>
-    <button type="submit" class="btn btn-default">Submit</button>
+    <button type="submit" class="btn btn-default" onsubmit=alert('Successfully submitted')>Submit</button>
   </form>
 </div>
 <body>
