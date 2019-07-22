@@ -28,5 +28,16 @@
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
 </div>
+<?php
+$serverName="tcp:applicationtest.database.windows.net"
+$connectionOptions = array(  
+    "Database" => "ApplicationTest",  
+    "UID" => "DemoTest",  
+    "PWD" => "Kesh@v9863250");
+$conn = sqlsrv_connect($serverName, $connectionOptions);
+if ($conn === false)  
+    {  
+    die(print_r(sqlsrv_errors() , true));  
+    }  
 <body>
 </html>
