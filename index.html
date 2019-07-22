@@ -4,7 +4,6 @@
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	<script></script>
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js"></script>
@@ -18,7 +17,7 @@
 </head>
 <body>
   <div class="container">
-  <form>
+  <form onsubmit=validate()>
       <div class="form-group"><br><br>
       <label for="email">Enter Text:</label>
       <input type="text" class="form-control" id="email" placeholder="Enter Text" name="text"><br>
@@ -26,7 +25,7 @@
     </div>
     <div>
     </div>
-    <button type="submit" class="btn btn-default" onsubmit=validate()>Submit</button>
+    <button type="submit" class="btn btn-default">Submit</button>
   </form>
 </div>
 <body>
